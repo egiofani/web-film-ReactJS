@@ -1,19 +1,15 @@
 .App {
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +20,63 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-heading{
+  color: white;
+  font-weight: 800;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cover-film img{
+  width: 18rem;
+  height: 25rem;
+  border-radius: 5px;
+  object-fit:cover;
+}
+
+.judul{
+  font-size: large;
+  color: white;
+}
+
+.film-wrapper{
+  
+}
+
+.slick-slide > div{
+ width: 200px;
+ 
+}
+
+.slick-active{
+  width: 100px;
+}
+
+
+.tanggal{
+  color: grey;
+}
+
+@media (max-width: 400px) {
+  .cover-film img{
+    width: 13rem  !important;
+    height: 20rem  !important;
+    border-radius: 5px  !important;
+    object-fit: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  .slick-slide > div{
+    width: 148px;
+    
+   }
+
+  .judul{
+    font-size: small  !important;
+    color: white;
+  }
+  
+  .tanggal{
+    color: grey;
   }
 }
+
+
